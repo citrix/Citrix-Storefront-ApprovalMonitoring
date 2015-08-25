@@ -145,6 +145,9 @@ namespace SFWorkflowService
         }
         private void button1_Click(object sender, EventArgs e)
         {
+            button1.Enabled = false;
+            button2.Enabled = true;
+
             this._watchTimer = new Timer();
             this._watchTimer.Interval = 15000;
             this._watchTimer.Tick += async (timer_sender, eventargs) =>
@@ -213,6 +216,10 @@ namespace SFWorkflowService
         private void button2_Click(object sender, EventArgs e)
         {
             this._watchTimer.Stop();
+
+            button1.Enabled = true;
+            button2.Enabled = false;
+
         }
     }
 }
