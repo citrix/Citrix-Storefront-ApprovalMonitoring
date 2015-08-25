@@ -91,7 +91,7 @@
             this.Controls.Add(this.txtManagerEmail);
             this.Controls.Add(this.button1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Storefront Monitoring Example";
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -145,6 +145,12 @@ namespace SFWorkflowService
         }
         private void button1_Click(object sender, EventArgs e)
         {
+            if ( textBox1.Text.Trim() == "")
+            {
+                MessageBox.Show("You must enter a managers email for approval");
+                return;
+            }
+
             button1.Enabled = false;
             button2.Enabled = true;
 
